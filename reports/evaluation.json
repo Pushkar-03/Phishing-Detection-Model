@@ -1,0 +1,50 @@
+{
+  "model_version": "phishing-url-v1",
+  "selected_model": "hist_gradient_boosting",
+  "threshold": 0.49999999999999994,
+  "n_test": 34940,
+  "accuracy": 0.9958786491127647,
+  "precision_phishing": 0.9990425386404048,
+  "recall_phishing": 0.9911792644863617,
+  "f1_phishing": 0.9950953678474115,
+  "macro_f1": 0.9957707836275557,
+  "pr_auc": 0.9985269322384861,
+  "roc_auc": 0.9981534026350147,
+  "false_positive_rate": 0.000693000693000693,
+  "confusion_matrix_labels_0_legitimate_1_phishing": {
+    "tn": 20188,
+    "fp": 14,
+    "fn": 130,
+    "tp": 14608
+  },
+  "mean_inference_ms_per_url_in_batch": 0.003789854036035303,
+  "classification_report": {
+    "legitimate": {
+      "precision": 0.9936017324539816,
+      "recall": 0.9993069993069993,
+      "f1-score": 0.9964461994076999,
+      "support": 20202.0
+    },
+    "phishing": {
+      "precision": 0.9990425386404048,
+      "recall": 0.9911792644863617,
+      "f1-score": 0.9950953678474115,
+      "support": 14738.0
+    },
+    "accuracy": 0.9958786491127647,
+    "macro avg": {
+      "precision": 0.9963221355471932,
+      "recall": 0.9952431318966806,
+      "f1-score": 0.9957707836275557,
+      "support": 34940.0
+    },
+    "weighted avg": {
+      "precision": 0.9958967124647288,
+      "recall": 0.9958786491127647,
+      "f1-score": 0.9958764067478392,
+      "support": 34940.0
+    }
+  },
+  "test_hostname_overlap_with_train_validation": null,
+  "note": "Grouped hostname split; publication data lacks reliable row timestamps, so temporal generalization is not measured."
+}
